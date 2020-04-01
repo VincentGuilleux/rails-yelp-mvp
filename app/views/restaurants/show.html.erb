@@ -15,7 +15,7 @@
   <%= @restaurant.category %>
 </p>
 
-<%= link_to 'Back', restaurants_path %>
+<%= link_to 'Back', restaurants_path, class: "btn btn-primary" %>
 
 <h4>Reviews</h4>
 <ul class="list-group">
@@ -24,4 +24,4 @@
   <% end %>
 </ul>
 
-<%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
+<%= link_to "Add a review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
